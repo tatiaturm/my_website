@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ფინალური პროექტის რეპორტი</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        section {
+            padding: 2rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+        }
+
+        h1 { margin-top: 0; }
+
+        .tag {
+            display: inline-block;
+            background: var(--accent-color);
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            margin-right: 0.5rem;
+        }
+
+        .insight-card {
+            background: #eef2f3;
+            padding: 1rem;
+            border-left: 5px solid var(--accent-color);
+            margin: 1rem 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>მონაცემთა ანალიზის ფინალური პროექტი</h1>
+    <p>წიგნების ბაზრის კვლევა და ვიზუალიზაცია</p>
+</header>
+
+<main>
+    <section id="about">
+        <h2>პროექტის შესახებ</h2>
+        <p>მოცემული პროექტი მომზადდა როგორც ფინალური დავალება. კვლევის საგანს წარმოადგენს ქართულ ბაზარზე არსებული პოპულარული წიგნები. თემა შეირჩა იმის გამო, რომ ლიტერატურული სფერო მუდმივად ვითარდება და საინტერესოა იმ ტენდენციების დანახვა, რაც ფასებსა და მკითხველის რეიტინგებს შორის არსებობს.</p>
+    </section>
+
+    <section id="stages">
+        <h2>განხორციელების ეტაპები</h2>
+        
+        <h3>1. მონაცემების მოგროვება</h3>
+        <p>მონაცემები შეგროვდა Python-ის გამოყენებით. პროცესში გამოყენებული იქნა <span class="tag">Pandas</span> ბიბლიოთეკა ინფორმაციის სტრუქტურირებისთვის. შედეგად შეიქმნა <span class="highlight">books_data.csv</span> ფაილი.</p>
+
+        <h3>2. მონაცემების დამუშავება</h3>
+        <p>მონაცემები ჩაიტვირთა Jupyter Notebook-ში. დამუშავებისას მოხდა ფასების და რეიტინგების გაფილტვრა და დაჯგუფება. გამოყენებული ბიბლიოთეკები: <span class="tag">Pandas</span>, <span class="tag">NumPy</span>.</p>
+
+        <h3>3. ვიზუალიზაცია</h3>
+        <p>მიღებული შედეგები აისახა გრაფიკებში. ვიზუალიზაციისთვის გამოყენებულია <span class="tag">Matplotlib</span> და <span class="tag">Seaborn</span>.</p>
+    </section>
+
+    <section id="findings">
+        <h2>მთავარი მიგნებები</h2>
+        <div class="insight-card">
+            <strong>მიგნება 1:</strong> ყველაზე მაღალი საშუალო ფასი <span class="highlight">ფენტეზის</span> ჟანრის წიგნებს აქვთ.
+        </div>
+        <div class="insight-card">
+            <strong>მიგნება 2:</strong> <span class="highlight">საბავშვო</span> ლიტერატურა გამოირჩევა ყველაზე მაღალი საშუალო რეიტინგით (5.0).
+        </div>
+        <div class="insight-card">
+            <strong>მიგნება 3:</strong> <span class="highlight">კლასიკური</span> ლიტერატურა ყველაზე ფართოდ არის წარმოდგენილი ბაზარზე და ინარჩუნებს ხელმისაწვდომ ფასებს.
+        </div>
+    </section>
+
+    <section id="links">
+        <h2>რესურსები</h2>
+        <p>პროექტის სრული კოდი და მონაცემები შეგიძლიათ იხილოთ GitHub-ზე.</p>
+        <p>ავტორი: თათია თურმანიძე</p>
+    </section>
+</main>
+
+<footer>
+    &copy; 2026 მონაცემთა ანალიზის პროექტი
+</footer>
+
+</body>
+</html>
